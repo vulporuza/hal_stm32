@@ -1,0 +1,387 @@
+# Kconfig - STM32CUBE HAL config
+
+# Copyright (c) 2016 Linaro Limited.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+menu "STM32CUBE HAL"
+
+config HAS_STM32CUBE
+    bool
+    select HAS_CMSIS
+    depends on SOC_FAMILY_STM32
+
+if HAS_STM32CUBE
+
+config USE_STM32_HAL_ADC
+  bool "HAL ADC"
+
+config USE_STM32_HAL_ADC_EX
+  bool "HAL ADC EX"
+
+config USE_STM32_HAL_CAN
+  bool "HAL CAN"
+
+config USE_STM32_HAL_CEC
+  bool "HAL CEC"
+
+config USE_STM32_HAL_COMP
+  bool "HAL COMP"
+
+config USE_STM32_HAL_CORTEX
+  bool "HAL CORTEX"
+
+config USE_STM32_HAL_CRC
+  bool "HAL CRC"
+
+config USE_STM32_HAL_CRC_EX
+  bool "HAL CRC EX"
+
+config USE_STM32_HAL_CRYPT
+  bool "HAL CRYPT"
+
+config USE_STM32_HAL_CRYPT_EX
+  bool "HAL CRYPT EX"
+
+config USE_STM32_HAL_DAC
+  bool "HAL DAC"
+
+config USE_STM32_HAL_DAC_EX
+  bool "HAL DAC EX"
+
+config USE_STM32_HAL_DCMI
+  bool "HAL DCMI"
+
+config USE_STM32_HAL_DCMI_EX
+  bool "HAL DCMI EX"
+
+config USE_STM32_HAL_DFSDM
+  bool "HAL DFSDM"
+
+config USE_STM32_HAL_DFSDM_EX
+  bool "HAL DFSDM EX"
+
+config USE_STM32_HAL_DMA
+  bool "HAL DMA"
+
+config USE_STM32_HAL_DMA2D
+  bool "HAL DMA2D"
+
+config USE_STM32_HAL_DMA_EX
+  bool "HAL DMA EX"
+
+config USE_STM32_HAL_DSI
+  bool "HAL DSI"
+
+config USE_STM32_HAL_ETH
+  bool "HAL ETH"
+
+config USE_STM32_HAL_EXTI
+  bool "HAL EXTI"
+
+config USE_STM32_HAL_FDCAN
+  bool "HAL FDCAN"
+
+config USE_STM32_HAL_FIREWALL
+  bool "HAL FIREWALL"
+
+config USE_STM32_HAL_FLASH
+  bool "HAL FLASH"
+
+config USE_STM32_HAL_FLASH_EX
+  bool "HAL FLASH EX"
+
+config USE_STM32_HAL_FLASH_RAMFUNC
+  bool "HAL FLASH RAMFUNC"
+
+config USE_STM32_HAL_FMPI2C
+  bool "HAL FMPI2C"
+
+config USE_STM32_HAL_FMPI2C_EX
+  bool "HAL FMPI2C EX"
+
+config USE_STM32_HAL_GFXMMU
+  bool "HAL GFXMMU"
+
+config USE_STM32_HAL_GPIO
+  bool "HAL GPIO"
+
+config USE_STM32_HAL_GPIO_EX
+  bool "HAL GPIO EX"
+
+config USE_STM32_HAL_HASH
+  bool "HAL HASH"
+
+config USE_STM32_HAL_HASH_EX
+  bool "HAL HASH EX"
+
+config USE_STM32_HAL_HCD
+  bool "HAL HCD"
+
+config USE_STM32_HAL_HRTIM
+  bool "HAL HRTIM"
+
+config USE_STM32_HAL_HSEM
+  bool "HAL HSEM"
+
+config USE_STM32_HAL_I2C
+  bool "HAL I2C"
+
+config USE_STM32_HAL_I2C_EX
+  bool "HAL I2C EX"
+
+config USE_STM32_HAL_I2S
+  bool "HAL I2S"
+
+config USE_STM32_HAL_I2S_EX
+  bool "HAL I2S EX"
+
+config USE_STM32_HAL_IPCC
+  bool "HAL IPCC"
+
+config USE_STM32_HAL_IRDA
+  bool "HAL IRDA"
+
+config USE_STM32_HAL_IWDG
+  bool "HAL IWDG"
+
+config USE_STM32_HAL_JPEG
+  bool "HAL JPEG"
+
+config USE_STM32_HAL_LCD
+  bool "HAL LCD"
+
+config USE_STM32_HAL_LPTIM
+  bool "HAL LPTIM"
+
+config USE_STM32_HAL_LTDC
+  bool "HAL LTDC"
+
+config USE_STM32_HAL_LTDC_EX
+  bool "HAL LTDC EX"
+
+config USE_STM32_HAL_MDIOS
+  bool "HAL MDIOS"
+
+config USE_STM32_HAL_MDMA
+  bool "HAL MDMA"
+
+config USE_STM32_HAL_MMC
+  bool "HAL MMC"
+
+config USE_STM32_HAL_MMC_EX
+  bool "HAL MMC EX"
+
+config USE_STM32_HAL_NAND
+  bool "HAL NAND"
+
+config USE_STM32_HAL_NOR
+  bool "HAL NOR"
+
+config USE_STM32_HAL_OPAMP
+  bool "HAL OPAMP"
+
+config USE_STM32_HAL_OPAMP_EX
+  bool "HAL OPAMP EX"
+
+config USE_STM32_HAL_OSPI
+  bool "HAL OSPI"
+
+config USE_STM32_HAL_PCCARD
+  bool "HAL PCCARD"
+
+config USE_STM32_HAL_PCD
+  bool "HAL PCD"
+
+config USE_STM32_HAL_PCD_EX
+  bool "HAL PCD EX"
+
+config USE_STM32_HAL_PWR
+  bool "HAL PWR"
+
+config USE_STM32_HAL_PWR_EX
+  bool "HAL PWR EX"
+
+config USE_STM32_HAL_QSPI
+  bool "HAL QSPI"
+
+config USE_STM32_HAL_RAMECC
+  bool "HAL RAMECC"
+
+config USE_STM32_HAL_RCC
+  bool "HAL RCC"
+
+config USE_STM32_HAL_RCC_EX
+  bool "HAL RCC EX"
+
+config USE_STM32_HAL_RNG
+  bool "HAL RNG"
+
+config USE_STM32_HAL_RTC
+  bool "HAL RTC"
+
+config USE_STM32_HAL_RTC_EX
+  bool "HAL RTC EX"
+
+config USE_STM32_HAL_SAI
+  bool "HAL SAI"
+
+config USE_STM32_HAL_SAI_EX
+  bool "HAL SAI EX"
+
+config USE_STM32_HAL_SD
+  bool "HAL SD"
+
+config USE_STM32_HAL_SD_EX
+  bool "HAL SD EX"
+
+config USE_STM32_HAL_SDADC
+  bool "HAL SDADC"
+
+config USE_STM32_HAL_SDRAM
+  bool "HAL SDRAM"
+
+config USE_STM32_HAL_SMARTCARD
+  bool "HAL SMARTCARD"
+
+config USE_STM32_HAL_SMARTCARD_EX
+  bool "HAL SMARTCARD EX"
+
+config USE_STM32_HAL_SMBUS
+  bool "HAL SMBUS"
+
+config USE_STM32_HAL_SPDIFRX
+  bool "HAL SPDIFRX"
+
+config USE_STM32_HAL_SPI
+  bool "HAL SPI"
+
+config USE_STM32_HAL_SPI_EX
+  bool "HAL SPI EX"
+
+config USE_STM32_HAL_SRAM
+  bool "HAL SRAM"
+
+config USE_STM32_HAL_SWPMI
+  bool "HAL SWPMI"
+
+config USE_STM32_HAL_TIM
+  bool "HAL TIM"
+
+config USE_STM32_HAL_TIM_EX
+  bool "HAL TIM EX"
+
+config USE_STM32_HAL_TSC
+  bool "HAL TSC"
+
+config USE_STM32_HAL_UART
+  bool "HAL UART"
+
+config USE_STM32_HAL_UART_EX
+  bool "HAL UART EX"
+
+config USE_STM32_HAL_USART
+  bool "HAL USART"
+
+config USE_STM32_HAL_USART_EX
+  bool "HAL USART EX"
+
+config USE_STM32_HAL_WWDG
+  bool "HAL WWDG"
+
+config USE_STM32_LL_ADC
+  bool "LL ADC"
+
+config USE_STM32_LL_BDMA
+  bool "LL BDMA"
+
+config USE_STM32_LL_COMP
+  bool "LL COMP"
+
+config USE_STM32_LL_CRC
+  bool "LL CRC"
+
+config USE_STM32_LL_CRS
+  bool "LL CRS"
+
+config USE_STM32_LL_DAC
+  bool "LL DAC"
+
+config USE_STM32_LL_DELAYBLOCK
+  bool "LL DELAYBLOCK"
+
+config USE_STM32_LL_DMA
+  bool "LL DMA"
+
+config USE_STM32_LL_DMA2D
+  bool "LL DMA2D"
+
+config USE_STM32_LL_EXTI
+  bool "LL EXTI"
+
+config USE_STM32_LL_FMC
+  bool "LL FMC"
+
+config USE_STM32_LL_FSMC
+  bool "LL FSMC"
+
+config USE_STM32_LL_GPIO
+  bool "LL GPIO"
+
+config USE_STM32_LL_HRTIM
+  bool "LL HRTIM"
+
+config USE_STM32_LL_I2C
+  bool "LL I2C"
+
+config USE_STM32_LL_IPCC
+  bool "LL IPCC"
+
+config USE_STM32_LL_LPTIM
+  bool "LL LPTIM"
+
+config USE_STM32_LL_LPUART
+  bool "LL LPUART"
+
+config USE_STM32_LL_MDMA
+  bool "LL MDMA"
+
+config USE_STM32_LL_OPAMP
+  bool "LL OPAMP"
+
+config USE_STM32_LL_PWR
+  bool "LL PWR"
+
+config USE_STM32_LL_RCC
+  bool "LL RCC"
+
+config USE_STM32_LL_RNG
+  bool "LL RNG"
+
+config USE_STM32_LL_RTC
+  bool "LL RTC"
+
+config USE_STM32_LL_SDMMC
+  bool "LL SDMMC"
+
+config USE_STM32_LL_SPI
+  bool "LL SPI"
+
+config USE_STM32_LL_SWPMI
+  bool "LL SWPMI"
+
+config USE_STM32_LL_TIM
+  bool "LL TIM"
+
+config USE_STM32_LL_USART
+  bool "LL USART"
+
+config USE_STM32_LL_USB
+  bool "LL USB"
+
+config USE_STM32_LL_UTILS
+  bool "LL UTILS"
+
+endif
+
+endmenu
